@@ -1,0 +1,39 @@
+.recipe-item-container {
+  width: 300px;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgb(0, 0, 0, 0.1);
+  margin: 20px;
+}
+
+.recipe-item-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.title-container {
+  display: flex;
+  justify-content: center;
+}
+
+.recipe-item-title {
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.recipe-item-btn {
+  border-radius: 0.5rem;
+  border: none;
+  background-color: #29bb89;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 16px;
+  color: white;
+  font-weight: 600;
+}
