@@ -2,9 +2,12 @@ import React from "react";
 import "./RecipeDetailsStyles.css";
 import { useEffect, useState } from "react";
 import Ingredients from "../Ingredients/Ingredients";
+import { useParams } from "react-router-dom";
 
-const RecipeDetails = ({ recipeId }) => {
-  const URL = `https://api.spoonacular.com/recipes/${recipeId}/information`;
+const RecipeDetails = () => {
+  const { id } = useParams();
+  console.log("ID",id);
+  const URL = `https://api.spoonacular.com/recipes/${id}/information`;
   const [recipeDetail, setRecipeDetail] = useState("");
   const [loading, setLodaing] = useState(true);
 
@@ -18,7 +21,7 @@ const RecipeDetails = ({ recipeId }) => {
 
   useEffect(() => {
     fetchRecipeDetail();
-  }, [recipeId]);
+  }, [id]);
 
   return (
     <div>

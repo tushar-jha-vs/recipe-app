@@ -1,6 +1,7 @@
 import React from "react";
 import "./RecipeItemStyles.css";
-const RecipeItem = ({ recipe, setRecipeId }) => {
+import { Link } from "react-router-dom";
+const RecipeItem = ({ recipe }) => {
   return (
     <div className="recipe-item-container">
       <img className="recipe-item-image" src={recipe.image} />
@@ -8,9 +9,9 @@ const RecipeItem = ({ recipe, setRecipeId }) => {
         <h1 className="recipe-item-title">{recipe.title}</h1>
       </div>
       <div className="btn-container">
-        <button className="recipe-item-btn" onClick={() => setRecipeId(recipe.id)}>
+        <Link className="recipe-item-btn" to={`recipe/${recipe.id}`}>
           View Recipe
-        </button>
+        </Link>
       </div>
     </div>
   );
