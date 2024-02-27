@@ -1,4 +1,4 @@
-# TODO App
+# Recipe App
 
 ## Overview
 This is a simple recipe app that allows you to fect hdifferent types of recipes from the spoonacluar api.
